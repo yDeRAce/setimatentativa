@@ -20,6 +20,7 @@ public class ALIEN : MonoBehaviour
     void Update()
     {
         MovimentarAlien();
+        AtirarLaser();
     }
 
     private void MovimentarAlien()
@@ -33,7 +34,8 @@ public class ALIEN : MonoBehaviour
 
         if (tempoAtualLasers <= 0)
         {
-            Instantiate(laser, localDisparo.position, Quaternion.Euler());
+            Instantiate(laser, localDisparo.position, Quaternion.Euler(0f, 0f, 0f));
+            tempoAtualLasers = tempoMaxEntreLasers;
         }
     }
 }

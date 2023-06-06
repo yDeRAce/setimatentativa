@@ -18,6 +18,7 @@ public class Tiro : MonoBehaviour
     private void MovimentarTiro()
     {
         transform.Translate(Vector3.right * velocidadeTiro * Time.deltaTime);
+        
     }
 
 }
