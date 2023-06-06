@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class ALIEN : MonoBehaviour
 {
+    public GameObject laser;
+    public Transform localDisparo;
+    
     public float velocidadeAlien;
+
+    public float tempoMaxEntreLasers;
+    public float tempoAtualLasers;
     void Start()
     {
         
@@ -19,5 +25,15 @@ public class ALIEN : MonoBehaviour
     private void MovimentarAlien()
     {
         transform.Translate(Vector3.down * velocidadeAlien * Time.deltaTime);
+    }
+
+    private void AtirarLaser()
+    {
+        tempoAtualLasers -= Time.deltaTime;
+
+        if (tempoAtualLasers <= 0)
+        {
+            Instantiate(laser, localDisparo.position, Quaternion.Euler());
+        }
     }
 }
