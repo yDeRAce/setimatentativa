@@ -3482,6 +3482,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1287874971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287874972}
+  m_Layer: 0
+  m_Name: SpawnAliens
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1287874972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287874971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 104.34, y: -10.02, z: -0.70180476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1295344016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,7 +4578,7 @@ MonoBehaviour:
   laser: {fileID: 1876026232998504692, guid: f36ca9185cc31ad4889b86fcacc98014, type: 3}
   localDisparo: {fileID: 1928125284}
   velocidadeAlien: 15
-  tempoMaxEntreLasers: 3
+  tempoMaxEntreLasers: 0.5
   tempoAtualLasers: 0
 --- !u!50 &1798781030
 Rigidbody2D:
@@ -4646,7 +4677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798781028}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 70.03, y: -9.4, z: 0}
+  m_LocalPosition: {x: 107.78, y: -9.400004, z: 0}
   m_LocalScale: {x: 3.1855495, y: 3.5177832, z: 0.69916886}
   m_ConstrainProportionsScale: 0
   m_Children:

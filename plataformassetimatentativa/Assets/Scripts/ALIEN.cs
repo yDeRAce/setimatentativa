@@ -9,6 +9,9 @@ public class ALIEN : MonoBehaviour
     
     public float velocidadeAlien;
 
+    public int vidaInicialAlien;
+    public int vidaAtualAlien;
+
     public float tempoMaxEntreLasers;
     public float tempoAtualLasers;
     void Start()
@@ -36,6 +39,16 @@ public class ALIEN : MonoBehaviour
         {
             Instantiate(laser, localDisparo.position, Quaternion.Euler(0f, 0f, 0f));
             tempoAtualLasers = tempoMaxEntreLasers;
+        }
+    }
+
+    private void DanoNoAlien(int danoTomadoAlien)
+    {
+        vidaAtualAlien -= danoTomadoAlien();
+        
+        if (vidaAtualAlien <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }

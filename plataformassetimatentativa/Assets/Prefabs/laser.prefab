@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1876026232998504699}
   - component: {fileID: 1876026232998504698}
   - component: {fileID: 1876026232998504693}
+  - component: {fileID: 4958137214192951323}
+  - component: {fileID: 899912042603966123}
   m_Layer: 0
   m_Name: laser
   m_TagString: Untagged
@@ -111,3 +113,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0318184, y: 1.2314615}
   m_EdgeRadius: 0
+--- !u!114 &4958137214192951323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876026232998504692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4418e2ec02e76b46b61d2f0a342e2a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeLaser: 20
+  danoDado: 1
+--- !u!114 &899912042603966123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876026232998504692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219f2c6e03dcfba4c926da0a527b5d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoDeVida: 5
