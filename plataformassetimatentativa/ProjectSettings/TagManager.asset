@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - visaoChefe
+  - Alien
   layers:
   - Default
   - TransparentFX
