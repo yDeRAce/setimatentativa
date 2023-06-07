@@ -16,7 +16,7 @@ public class ALIEN : MonoBehaviour
     public float tempoAtualLasers;
     void Start()
     {
-        
+        vidaAtualAlien = vidaInicialAlien;
     }
 
 
@@ -42,13 +42,15 @@ public class ALIEN : MonoBehaviour
         }
     }
 
-    private void DanoNoAlien(int danoTomadoAlien)
+    public void DanoNoAlien(int danoRecebidoAlien)
     {
-        vidaAtualAlien -= danoTomadoAlien();
+        vidaAtualAlien -= danoRecebidoAlien();
         
-        if (vidaAtualAlien <= 0)
+        if (vidaAtualAlien <= 0) 
         {
             Destroy(this.gameObject);
         }
+
     }
+    
 }

@@ -37,12 +37,4 @@ public class NaveControle : MonoBehaviour
             Instantiate(tiroNave, localDisparo.position, localDisparo.rotation);
         }
     }
-
-    public void Dano(int dmg)
-    {
-        if (vida <= 0)
-        {
-            
-        }
-    }
 }
