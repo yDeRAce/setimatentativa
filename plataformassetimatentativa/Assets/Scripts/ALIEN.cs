@@ -42,15 +42,4 @@ public class ALIEN : MonoBehaviour
         }
     }
 
-    public void DanoNoAlien(int danoRecebidoAlien)
-    {
-        vidaAtualAlien -= danoRecebidoAlien();
-        
-        if (vidaAtualAlien <= 0) 
-        {
-            Destroy(this.gameObject);
-        }
-
-    }
-    
 }
