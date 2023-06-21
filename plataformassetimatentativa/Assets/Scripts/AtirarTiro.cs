@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class AtirarTiro : MonoBehaviour
 {
     public float velocidadeTiro;
-    public int danoDadoAlien;
+    public int danoDado;
     void Start()
     {
         
@@ -18,5 +19,14 @@ public class AtirarTiro : MonoBehaviour
     {
         transform.Translate(Vector3.right * velocidadeTiro * Time.deltaTime);
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Inimigo"))
+        {
+            col.gameObject.GetComponent<VIdaInimigos>().MachucarInimigo(danoDado);
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - visaoChefe
   - Alien
+  - Inimigo
   layers:
   - Default
   - TransparentFX
