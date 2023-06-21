@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VidaNave : MonoBehaviour
 {
+    public Slider barraDeVidaNave;
+    
     public int vidaInicialNave;
     public int vidaAtualNave;
     public bool escudoAtivo;
     void Start()
     {
         vidaAtualNave = vidaInicialNave;
+        barraDeVidaNave.maxValue = vidaInicialNave;
+        barraDeVidaNave.value = vidaAtualNave;
     }
     
     void Update()
@@ -22,6 +27,7 @@ public class VidaNave : MonoBehaviour
         if (escudoAtivo == false)
         {
             vidaAtualNave -= danoRecebido;
+            barraDeVidaNave.value = vidaAtualNave;
             
             if (vidaAtualNave <= 0)
             {
@@ -29,9 +35,5 @@ public class VidaNave : MonoBehaviour
             }
         }
         
-        else
-        {
-            
-        }
     }
 }
