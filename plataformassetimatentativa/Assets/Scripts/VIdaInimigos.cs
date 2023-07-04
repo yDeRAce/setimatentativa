@@ -19,13 +19,13 @@ public class VIdaInimigos : MonoBehaviour
        
     }
 
-    public void MachucarInimigo(int danoRecebido)
+    public void MachucarInimigo(int danoRecebidoInimigo)
     {
-        VidaAtualInimigo -= danoRecebido;
+        VidaAtualInimigo -= danoRecebidoInimigo;
 
         if (VidaAtualInimigo <= 0)
         {
-            GameManager.instance.AumentarPontos(pontosGanhados);
+            
             Destroy(this.gameObject);
         }
     }

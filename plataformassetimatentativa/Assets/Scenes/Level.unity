@@ -6263,6 +6263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaInicialInimigo: 2
   VidaAtualInimigo: 0
+  pontosGanhados: 5
 --- !u!1 &1199109990
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,6 +7825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaInicialInimigo: 1
   VidaAtualInimigo: 0
+  pontosGanhados: 0
 --- !u!1001 &1502497918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9361,6 +9363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaInicialInimigo: 6
   VidaAtualInimigo: 0
+  pontosGanhados: 10
 --- !u!1 &1745644599
 GameObject:
   m_ObjectHideFlags: 0
@@ -9688,6 +9691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaInicialInimigo: 4
   VidaAtualInimigo: 0
+  pontosGanhados: 1
 --- !u!1 &1804225701
 GameObject:
   m_ObjectHideFlags: 0
