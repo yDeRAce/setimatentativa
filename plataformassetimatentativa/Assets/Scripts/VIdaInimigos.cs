@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VIdaInimigos : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class VIdaInimigos : MonoBehaviour
 
         if (VidaAtualInimigo <= 0)
         {
-            
+            GameManager.instance.AumentarPontos(pontosGanhados);
             Destroy(this.gameObject);
         }
     }
