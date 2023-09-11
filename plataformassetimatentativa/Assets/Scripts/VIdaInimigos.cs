@@ -10,6 +10,8 @@ public class VIdaInimigos : MonoBehaviour
 
     public int pontosGanhados;
     
+    public int danoDado;
+    
     void Start()
     {
         VidaAtualInimigo = vidaInicialInimigo;
@@ -28,6 +30,14 @@ public class VIdaInimigos : MonoBehaviour
         {
             GameManager.instance.AumentarPontos(pontosGanhados);
             Destroy(this.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D()
+    {
+        if (gameObject.CompareTag("Player"))
+        {
+            gameObject.GetComponent<VidaNave>().DanoNave(danoDado);
         }
     }
 }
