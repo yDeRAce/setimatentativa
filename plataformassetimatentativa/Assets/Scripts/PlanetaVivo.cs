@@ -6,6 +6,7 @@ public class PlanetaVivo : MonoBehaviour
 {
     private Transform posicaoNave;
     public float velocidadePlanetaVivo;
+    
     void Start()
     {
         posicaoNave = GameObject.FindGameObjectWithTag("Player").transform;

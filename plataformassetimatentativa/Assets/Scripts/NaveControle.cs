@@ -31,6 +31,7 @@ public class NaveControle : MonoBehaviour
     {
         MovimentarNave();
         Atirar();
+        
         if (temlaserDuplo == true)
         {
             tempoALaserD -= Time.deltaTime;
@@ -49,21 +50,20 @@ public class NaveControle : MonoBehaviour
 
     private void Atirar()
     {
-        if (temlaserDuplo == false)
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (Input.GetButtonDown("Fire1"))
+            if ( temlaserDuplo == false)
             {
                 Instantiate(tiroNave, localDisparo.position, localDisparo.rotation);
             }
-        }
-        else
-        {
-            if (Input.GetButtonDown("Fire1"))
+            
+            else
             {
                 Instantiate(tiroDuplo, localUm.position, localUm.rotation);
                 Instantiate(tiroDuplo, localDois.position, localDois.rotation);
             }
         }
+        
     }
 
     private void DesativarLaserD()

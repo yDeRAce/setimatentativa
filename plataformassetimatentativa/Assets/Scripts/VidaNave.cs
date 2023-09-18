@@ -26,7 +26,7 @@ public class VidaNave : MonoBehaviour
     
     void Update()
     {
-    
+        
     }
 
     public void AtivarEScudo()

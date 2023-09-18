@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cf1aefb7e5287448fa68cdfdc8f160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeTiro: 25
+  velocidadeTiro: 45
   danoDado: 1
 --- !u!114 &-404184788185404762
 MonoBehaviour:

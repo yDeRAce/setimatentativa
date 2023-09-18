@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +10,11 @@ public class VIdaInimigos : MonoBehaviour
     public int VidaAtualInimigo;
 
     public int pontosGanhados;
+    public int chanceDrope;
     
     public int danoDado;
-    
+    public GameObject itemDropado;
+
     void Start()
     {
         VidaAtualInimigo = vidaInicialInimigo;
@@ -29,6 +32,13 @@ public class VIdaInimigos : MonoBehaviour
         if (VidaAtualInimigo <= 0)
         {
             GameManager.instance.AumentarPontos(pontosGanhados);
+            
+            int numeroAleatorio = Random.Range(1, 50);
+            if (numeroAleatorio <= chanceDrope)
+            {
+                
+            }
+            
             Destroy(this.gameObject);
         }
     }
