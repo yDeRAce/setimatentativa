@@ -8,15 +8,15 @@ public class NaveControle : MonoBehaviour
     public int vida;
     public Rigidbody2D oRigidBody2D;
 
+    public GameObject tiroNave;
+    public Transform localDisparo;
+    
     public bool temlaserDuplo;
     public GameObject tiroDuplo;
     public Transform localUm;
     public Transform localDois;
     public float tempoMaxLaserD;
     public float tempoALaserD;
-    
-    public GameObject tiroNave;
-    public Transform localDisparo;
     
     public float velocidadeNave;
     private Vector2 teclasApertadas;
