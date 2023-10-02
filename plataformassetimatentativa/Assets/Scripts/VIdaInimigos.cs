@@ -8,6 +8,7 @@ public class VIdaInimigos : MonoBehaviour
 {
     public int vidaInicialInimigo;
     public int VidaAtualInimigo;
+    public int inimigosDerrotados;
 
     public int pontosGanhados;
     public int chanceDrope;
@@ -18,8 +19,9 @@ public class VIdaInimigos : MonoBehaviour
     void Start()
     {
         VidaAtualInimigo = vidaInicialInimigo;
+        inimigosDerrotados = 0;
     }
-    
+
     void Update()
     {
        
@@ -31,8 +33,6 @@ public class VIdaInimigos : MonoBehaviour
 
         if (VidaAtualInimigo <= 0)
         {
-            GameManager.instance.AumentarPontos(pontosGanhados);
-            
             int numeroAleatorio = Random.Range(1, 50);
             if (numeroAleatorio <= chanceDrope)
             {
@@ -49,5 +49,11 @@ public class VIdaInimigos : MonoBehaviour
         {
             gameObject.GetComponent<VidaNave>().DanoNave(danoDado);
         }
+    }
+
+    
+    public void AumentarPontos(int pontosGanhos)
+    {
+        inimigosDerrotados += pontosGanhos;
     }
 }
