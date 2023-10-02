@@ -1,34 +1,39 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-
-    public Text pontosAtuais;
-    
-    public int inimigosDerrotados;
-
+    public static GameManager Instance;
     private void Awake()
     {
-        instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject); 
+        }
     }
 
     void Start()
     {
-        inimigosDerrotados = 0;
+        void LoadScenes(string menu)
+        {
+            SceneManager.LoadScene(menu);
+        }
     }
     
     void Update()
     {
         
     }
-
-    public void AumentarPontos(int pontosGanhos)
-    {
-        inimigosDerrotados += pontosGanhos;
-    }
+    
 }
