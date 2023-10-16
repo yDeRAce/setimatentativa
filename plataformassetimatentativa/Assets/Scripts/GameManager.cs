@@ -31,10 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        void LoadScenes(string menu)
-        {
-            SceneManager.LoadScene(menu);
-        }
+        
     }
     
     public void Botoes()

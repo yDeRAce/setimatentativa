@@ -20,7 +20,7 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void Joga()
+    public void Jogar()
     {
         GameManager.Instance.Botoes();
         painel.SetActive(false);
