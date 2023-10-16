@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuMaganer : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     public GameObject menuPause;
     public GameObject painel;
@@ -22,6 +22,7 @@ public class MenuMaganer : MonoBehaviour
 
     public void Joga()
     {
+        GameManager.Instance.Botoes();
         painel.SetActive(false);
     }
 
